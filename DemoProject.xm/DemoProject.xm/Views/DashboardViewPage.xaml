@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DemoProject.xm.Views.DashboardViewPage">
+  <ContentView.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10">
+                <Grid Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Frame Padding="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="dashboard1.png"/>
+                            <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                                <Label Text="Be a World Class Abu Dhabi Tourist Guide" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="" FontSize="Micro"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <BoxView Color="Gray" HorizontalOptions="Fill" HeightRequest="1"/>
+                                <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" Command="{Binding BeTouristCommand}"
+                                Text="Explore" FontSize="Small"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="1" Padding="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label Text="Excellent Customer Service"  HorizontalTextAlignment="Start"
+                       FontSize="Small" TextColor="Black"/>
+                                <Label HorizontalOptions="Start" >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="Price " FontSize="Micro"/>
+                                                <Span Text="350" FontSize="Small" FontAttributes="Bold" />
+                                                <Span Text="AED" FontSize="Micro"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
+                            Text="Enroll now" FontSize="Small"/>
+                            </StackLayout>
+                            <Image Source="dashboard2.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Padding="0" Grid.Row="2">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="dashboard3.png"/>
+                            <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                                <Label Text="Abu Dhabi Sites and Attractions" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                                <Label HorizontalOptions="End" >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="Price " FontSize="Micro"/>
+                                                <Span Text="350" FontSize="Small" FontAttributes="Bold" />
+                                                <Span Text="AED" FontSize="Micro"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30"
+                                Text="Enroll now" FontSize="Small"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Row="3" Padding="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label Text="History and Culture of Abu Dhabi"  HorizontalTextAlignment="End"
+                       FontSize="Small" TextColor="Black"/>
+                                <Label HorizontalOptions="Start" >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="Price " FontSize="Micro"/>
+                                                <Span Text="350" FontSize="Small" FontAttributes="Bold" />
+                                                <Span Text="AED" FontSize="Micro"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
+                            Text="Enroll now" FontSize="Small"/>
+                            </StackLayout>
+                            <Image Source="dashboard4.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           Grid.Column="1"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Padding="0" Grid.Row="4">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="dashboard1.png"/>
+                            <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                                <Label Text="Renew License" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                                <Span Text="" FontSize="Micro"/>
+                                            </FormattedString.Spans>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                <Button BackgroundColor="#C1802A" TextColor="White" BorderRadius="30"
+                                Text="Enroll Now" FontSize="Small"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

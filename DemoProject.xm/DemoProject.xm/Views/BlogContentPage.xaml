@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModel="clr-namespace:DemoProject.xm.ViewModels"
+             xmlns:view="clr-namespace:DemoProject.xm.Views"
+             mc:Ignorable="d"
+             x:Class="DemoProject.xm.Views.BlogContentPage" Title="Blog Content">
+    <ContentPage.BindingContext>
+        <viewModel:CardDataViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical">
+    <Label Text="Blog Collection"
+             VerticalOptions="Start"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             BackgroundColor="Transparent"
+             HorizontalOptions="CenterAndExpand" />
+    <ListView x:Name="listView" SelectedItem="{Binding SelcetedItem,Mode=TwoWay}" 
+              RowHeight="150" 
+              ItemsSource="{Binding CardDataCollection}" HasUnevenRows="True"   >
+        <ListView.ItemTemplate>
+            <DataTemplate >
+                <ViewCell>
+                    <view:CardViewTemplate/>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </StackLayout>
+
+</ContentPage>

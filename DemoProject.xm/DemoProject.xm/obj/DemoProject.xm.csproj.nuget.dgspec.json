@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\WorkStation\\Mobile-Xamrin\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm.csproj": {}
+  },
+  "projects": {
+    "C:\\WorkStation\\Mobile-Xamrin\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\WorkStation\\Mobile-Xamrin\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm.csproj",
+        "projectName": "DemoProject.xm",
+        "projectPath": "C:\\WorkStation\\Mobile-Xamrin\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm.csproj",
+        "packagesPath": "C:\\Users\\sudipto.sarkar\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkStation\\Mobile-Xamrin\\DemoProject.xm\\DemoProject.xm\\DemoProject.xm\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sudipto.sarkar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.908675, )"
+            },
+            "Xamarin.Forms.Visual.Material": {
+              "target": "Package",
+              "version": "[3.6.0.709228, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

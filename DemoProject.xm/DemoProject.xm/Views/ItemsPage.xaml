@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:view="clr-namespace:DemoProject.xm.Views"
+             mc:Ignorable="d"
+             x:Class="DemoProject.xm.Views.ItemsPage" Title="Up-Skill Tutorials" >   
+   
+    <ContentPage.Content>
+      
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+
+            <!-- PANEL 1 -->
+
+            <ContentView Grid.Row="0" IsVisible="True" BackgroundColor="White" x:Name="MainView">
+                <ScrollView>
+                    <StackLayout Padding="10" Spacing="10">
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>                            
+                            </Grid.RowDefinitions>
+                            <Frame Padding="0">
+                                <Grid BackgroundColor="#F1F1F1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="AzureRound.png" Aspect="AspectFit"  WidthRequest="50" HeightRequest="150"/>
+                                    <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                                        <Label Text="Azure Tutorial" TextColor="Black" FontSize="20"  FontFamily="Roboto-Regular.ttf#Roboto-Regular"></Label>
+                                        <!--<Label Text="Azure Tutorial" FontFamily="Roboto-Regular.ttf#Roboto-Regular" HorizontalTextAlignment="St FontFamily="Roboto-Regular.ttf#Roboto-Regular"art"  FontSize="Medium" TextColor="black"/>-->
+                                        <Label Text="Learn Microsoft Azure from Experts. In this Microsoft Azure tutorial, you will learn Azure from basics to expert" 
+                                   HorizontalTextAlignment="Start" FontSize="16" TextColor="#51565e" FontFamily="Roboto-Regular.ttf#Roboto-Regular"/>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="" FontSize="Micro"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <BoxView Color="Gray" HorizontalOptions="Fill" HeightRequest="1"/>
+                                        <Button x:Name="btnAzureExplore" BackgroundColor="#6AB187" TextColor="White" BorderRadius="30" Clicked="btnAzureExplore_Clicked" Command="{Binding BeTouristCommand}"
+                                Text="Explore" FontSize="Small"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                            <Frame Grid.Row="1" Padding="0">
+                                <Grid BackgroundColor="#F1F1F1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout Orientation="Vertical" Padding="10">
+                                        <Label Text="C# Tutorial"  HorizontalTextAlignment="Start"
+                       FontSize="Small" TextColor="Black"/>
+                                        <Label HorizontalOptions="Start" FontFamily="Roboto-Regular.ttf#Roboto-Regular" Text="Welcome to this C# tutorial. This tutorial will teach you basic C# programming and will also take you through various advanced concepts related to C#." >
+                                           
+                                        </Label>
+                                        <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                        <Button x:Name="btnCSharpExplore" BackgroundColor="#6AB187" TextColor="White" Clicked="btnCSharpExplore_Clicked" BorderRadius="30" HorizontalOptions="FillAndExpand" 
+                            Text="Explore" FontSize="Small"/>
+                                    </StackLayout>
+                                    <Image Source="cSharpRound.png" WidthRequest="50" HeightRequest="150"  Grid.Column="1"/>
+                                </Grid>
+                            </Frame>
+                            <Frame Padding="0" Grid.Row="2">
+                                <Grid BackgroundColor="#F1F1F1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="MVC_Round.png" HeightRequest="150" WidthRequest="50"/>
+                                    <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                                        <Label Text="Abu Dhabi Sites and Attractions" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                                        <Label HorizontalOptions="End" >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="Price " FontSize="Micro"/>
+                                                        <Span Text="350" FontSize="Small" FontAttributes="Bold" />
+                                                        <Span Text="AED" FontSize="Micro"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                        <Button BackgroundColor="#6AB187" TextColor="White" BorderRadius="30"
+                                Text="Explore" FontSize="Small"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                            <Frame Grid.Row="3" Padding="0">
+                                <Grid BackgroundColor="#F1F1F1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout Orientation="Vertical" Padding="10">
+                                        <Label Text="History and Culture of Abu Dhabi"  HorizontalTextAlignment="End"
+                                        FontSize="Small" TextColor="Black"/>
+                                        <Label HorizontalOptions="Start" >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="Price " FontSize="Micro"/>
+                                                        <Span Text="350" FontSize="Small" FontAttributes="Bold" />
+                                                        <Span Text="AED" FontSize="Micro"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                        <Button BackgroundColor="#6AB187" TextColor="White" BorderRadius="30" HorizontalOptions="FillAndExpand"
+                            Text="Explore" FontSize="Small"/>
+                                    </StackLayout>
+                                    <Image Source="AngularRound.png"  WidthRequest="50" HeightRequest="150" Grid.Column="1"/>
+                                </Grid>
+                            </Frame>
+                            <!--<Frame Padding="0" Grid.Row="4">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="dashboard1.png"/>
+                                    <StackLayout Orientation="Vertical" Grid.Column="1" Padding="10">
+                                        <Label Text="Renew License" 
+                                   HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"/>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <FormattedString.Spans>
+                                                        <Span Text="" FontSize="Micro"/>
+                                                    </FormattedString.Spans>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <BoxView Color="Gray" HorizontalOptions="FillAndExpand" HeightRequest="1"/>
+                                        <Button BackgroundColor="#6AB187" TextColor="White" BorderRadius="30"
+                                Text="Enroll Now" FontSize="Small"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>-->
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+
+            </ContentView>
+
+
+            <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="1" x:Name="bottonMenu">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ClickTap1" NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image x:Name="tab_home_icon_selected" IsVisible="True" Source="home_img" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
+                    <Label Margin="0" x:Name="tab_home" Text="HOME" FontSize="Micro"/>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="1">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ClickTap2" NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image x:Name="tab_scan_icon_unselected"  Source="QA_img" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
+                    <Label Text="InterviewQ and A" x:Name="tab_scan" FontSize="Micro" />
+
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="2">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ClickTap3" NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image x:Name="tab_search_icon_unselected" Source="Blogs_img" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
+                    <Label Text="Blogs" x:Name="tab_search" FontSize="Micro"/>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Padding="20" Margin="-20,-10,-20,-17" Grid.Column="3">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ClickTap4" NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image x:Name="tab_music_icon_unselected" Source="user_profile_img" HeightRequest="22" WidthRequest="22" Margin="0,0,0,-2" />
+                    <Label Text="Profile" x:Name="tab_music" FontSize="Micro"/>
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>

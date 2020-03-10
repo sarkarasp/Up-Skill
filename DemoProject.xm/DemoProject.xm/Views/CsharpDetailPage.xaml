@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DemoProject.xm.Views.CsharpDetailPage">
+    <ContentPage.Content>
+            <StackLayout HorizontalOptions="Center">              
+            <Image x:Name="MyImageCall"  Source="CSharpIntroduction1.png"/>
+            <Label x:Name="MyItemNameShow" Margin="5" TextColor="Black" HorizontalTextAlignment="Start" FontFamily="Roboto-Bold.ttf#Roboto-Bold" FontSize="25" Text="Introduction to C#"/>
+            <Label  x:Name="MyIngrediantItemShow" Margin="5,5" FontSize="16"  FontFamily="Roboto-Regular.ttf#Roboto-Regular" Text="main content"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
